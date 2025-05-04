@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -21,8 +21,9 @@
   <div class="absolute w-full z-100 bg-transparent px-8 py-6">
     <div class="container mx-auto">
       <div class="text-lg flex justify-end gap-6">
-        <a href="#">About</a>
-        <a href="#">Requirements</a>
+        <a href="#about">About</a>
+        <a href="#requirements">Requirements</a>
+        <a href="#faq">FAQ</a>
         <a href="#">Gallery</a>
         <a href="#">Resources</a>
       </div>
@@ -47,19 +48,103 @@
     </div>
   </div>
 
-  <div class="bg-blue-600">
-    <div class="container mx-auto pt-8 pb-128">
-      <h2 class="text-5xl font-bold text-center mb-16">How does it work?</h2>
-      <div class="grid grid-cols-3">
+  <div class="bg-blue-600 pb-16">
+    <div class="container mx-auto">
+      <!-- How does it work section -->
+      <h2 id="about" class="text-5xl font-bold text-center mb-8 pt-12">How does it work?</h2>
+      <div class="grid grid-cols-3 gap-8">
         <div class="py-6 px-8 bg-blue-700 rounded-xl shadow-lg">
-          <h3 class="text-3xl font-bold mb-4 text-teal-300">Step 1: Build a Website</h3>
+          <img class="mb-4 rounded-xl transition-transform duration-300 ease-in-out hover:scale-110"
+            src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/6ebdab2947634b6754c9edb824e1ecad228acb7c_image.png"
+            alt="">
+          <h3 class="text-3xl font-bold mb-4 text-teal-300">Build a Website</h3>
           <p class="text-lg text-white">
-            Build a website using <span class="font-bold text-red-400">only</span> HTML and Tailwind CSS.
+            Build a website using <span class="font-bold text-red-400">only</span> HTML and Tailwind CSS. Using CSS is
+            not allowed!
+          </p>
+        </div>
+
+        <div class="py-6 px-8 bg-blue-700 rounded-xl shadow-lg">
+          <img class="mb-4 rounded-xl transition-transform duration-300 ease-in-out hover:scale-110"
+            src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/af8cc5d2e2efa0283d6b2b26bcccda853fb1a3e1_image.png"
+            alt="">
+          <h3 class="text-3xl font-bold mb-4 text-teal-300">Publish your website</h3>
+          <p class="text-lg text-white">
+            Using Github Pages, share your website with the world!
+          </p>
+        </div>
+
+        <div class="py-6 px-8 bg-blue-700 rounded-xl shadow-lg">
+          <img class="mb-4 rounded-xl transition-transform duration-300 ease-in-out hover:scale-110"
+            src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/b143fe906fbb535ef0e596437ccb13cd4498fc70_image.png"
+            alt="">
+          <h3 class="text-3xl font-bold mb-4 text-teal-300">Get your TBD</h3>
+          <p class="text-lg text-white">
+            Get $X grant to spend on TBD.
+          </p>
+        </div>
+      </div>
+
+      <!-- Requirements section -->
+
+      <h2 id="requirements" class="text-5xl font-bold text-center pt-12 mb-12">Requirements</h2>
+
+      <ul class="list-disc text-xl bg-blue-700 py-6 px-12 rounded-xl shadow-lg space-y-2">
+        <li>You are a high school student</li>
+        <li>Your website is using only HTML and Tailwind CSS. No CSS is allowed.</li>
+        <li>Your website must be nice looking!</li>
+        <li>Have at least 3 unique features. It can include, but not limited to:</li>
+        <ul class="list-[circle] ml-6 space-y-2">
+          <li>Navbar</li>
+          <li>Footer</li>
+          <li>Footer</li>
+        </ul>
+      </ul>
+
+      <!-- FAQ section -->
+
+      <h2 id="faq" class="text-5xl font-bold text-center pt-12 mb-12">Frequently Asked Questions</h2>
+      <div class="grid grid-cols-2 gap-8">
+        <div class="py-6 px-8 bg-blue-700 rounded-xl shadow-lg">
+          <h3 class="text-3xl font-bold mb-4 text-teal-300">What is Tailwind CSS?</h3>
+          <p class="text-lg text-white">
+            Tailwind CSS is a utility-first CSS framework that provides low-level utility classes to build custom
+            designs.
+            It is a CSS framework that allows you to build your website without writing any CSS. You can find more about
+            it <a href="https://tailwindcss.com/docs/installation" class="text-teal-300 underline">here</a>.
+          </p>
+        </div>
+        <div class="py-6 px-8 bg-blue-700 rounded-xl shadow-lg">
+          <h3 class="text-3xl font-bold mb-4 text-teal-300">Can I use CSS in my project?</h3>
+          <p class="text-lg text-white">
+            No. Tailwind CSS allows you develop your website using only HTML and Tailwind CSS. No CSS is allowed.
+          </p>
+        </div>
+        <div class="py-6 px-8 bg-blue-700 rounded-xl shadow-lg">
+          <h3 class="text-3xl font-bold mb-4 text-teal-300">Where can I ask for help?</h3>
+          <p class="text-lg text-white">
+            Please reach out in the #TBD channel on Slack. If you need help with your grant or project, please reach out
+            to @Artem.
+          </p>
+        </div>
+        <div class="py-6 px-8 bg-blue-700 rounded-xl shadow-lg">
+          <h3 class="text-3xl font-bold mb-4 text-teal-300">When does it end?</h3>
+          <p class="text-lg text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio soluta labore, quas porro harum, maxime
+            laudantium similique vel eaque corrupti quos veniam dicta amet nemo, rerum ipsam nesciunt autem. Repellat.
           </p>
         </div>
       </div>
     </div>
   </div>
+
+  <footer class="bg-blue-700 py-4">
+    <div class="container mx-auto flex flex-col items-center">
+      <p class="text-md">
+        Made with ❤️ by the Hack Club community!
+      </p>
+    </div>
+  </footer>
 </body>
 
 </html>
