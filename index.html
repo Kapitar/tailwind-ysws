@@ -14,9 +14,11 @@
 </head>
 
 <body class="font-[Inter] text-white">
-  <a href="https://hackclub.com/"><img
-      style="position: absolute; top: 0; left: 10px; border: 0; width: 200px; z-index: 999;"
-      src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club" /></a>
+  <a href="https://hackclub.com/">
+    <img
+      class="absolute top-0 left-[10px] border-0 md:w-[200px] w-[150px] z-[999]"
+      src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club" />
+    </a>
 
   <div class="absolute w-full z-100 bg-transparent px-8 py-6">
     <div class="container mx-auto">
@@ -29,17 +31,17 @@
   </div>
 
   <div class="bg-blue-700">
-    <div class="container mx-auto h-screen flex flex-col items-center justify-center">
-      <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/dfc21fab1983fdde7ee802399cee6ca31b076929_tailwind_css_logo.svg.png" class="mb-16" width="400px">
-      <div class="text-6xl font-bold text-center">
+    <div class="container md:px-0 px-4 mx-auto h-screen flex flex-col items-center justify-center">
+      <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/dfc21fab1983fdde7ee802399cee6ca31b076929_tailwind_css_logo.svg.png" class="md:mb-16 mb-8 w-64">
+      <div class="md:text-6xl text-5xl font-bold text-center">
         <h1 class="mb-4">Build a website using <span class="text-teal-300">Tailwind CSS</span></h1>
         <h1>Get <span class="text-teal-300">TBD</span></h1>
       </div>
 
-      <div class="mt-8 text-blue-700 font-bold">
-        <div class="mb-4 flex gap-6">
-          <a href="#" class="text-xl rounded-xl bg-teal-300 px-8 py-3">Get your TBD</a>
-          <a href="#" class="text-xl rounded-xl bg-teal-300 px-8 py-3">Run a Club Meeting</a>
+      <div class="mt-8 text-blue-700 font-bold px-4">
+        <div class="md:mb-4 mb-4 flex flex-col md:flex-row md:gap-6 gap-4">
+          <a href="#" class="text-xl text-center rounded-xl bg-teal-300 px-8 py-3">Get your TBD</a>
+          <a href="#" class="text-xl text-center rounded-xl bg-teal-300 px-8 py-3">Run a Club Meeting</a>
         </div>
         <a href="#" class="text-xl text-center rounded-xl bg-orange-300 px-8 py-3 block">Getting Started Guide</a>
       </div>
@@ -47,10 +49,10 @@
   </div>
 
   <div class="bg-blue-600 pb-16">
-    <div class="container mx-auto">
+    <div class="container md:px-0 px-4 mx-auto">
       <!-- How does it work section -->
       <h2 id="about" class="text-5xl font-bold text-center mb-8 pt-12">How does it work?</h2>
-      <div class="grid grid-cols-3 gap-8">
+      <div class="grid md:grid-cols-3 grid-cols-1 gap-8">
         <div class="py-6 px-8 bg-blue-700 rounded-xl shadow-lg">
           <img class="mb-4 rounded-xl transition-transform duration-300 ease-in-out hover:scale-110"
             src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/6ebdab2947634b6754c9edb824e1ecad228acb7c_image.png"
@@ -103,7 +105,7 @@
       <!-- FAQ section -->
 
       <h2 id="faq" class="text-5xl font-bold text-center pt-12 mb-12">Frequently Asked Questions</h2>
-      <div class="grid grid-cols-2 gap-8">
+      <div class="grid md:grid-cols-2 grid-cols-1 gap-8">
         <div class="py-6 px-8 bg-blue-700 rounded-xl shadow-lg">
           <h3 class="text-3xl font-bold mb-4 text-teal-300">What is Tailwind CSS?</h3>
           <p class="text-lg text-white">
