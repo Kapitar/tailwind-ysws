@@ -44,7 +44,7 @@ async function fetchData() {
             Basic Meal
           </p>
           <div class="flex gap-x-2 mt-2 mb-4">
-            <a href="${submission.demo}"
+            <a href="${submission.demo}" target="_blank"
               class="text-md flex gap-x-2 items-center text-white text-center rounded-xl bg-blue-800 hover:bg-blue-900 px-4 py-2">
               <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#fff">
                 <path
@@ -52,7 +52,7 @@ async function fetchData() {
               </svg>
               Demo
             </a>
-            <a href="${submission.codeUrl}"
+            <a href="${submission.codeUrl}" target="_blank"
               class="text-md flex gap-x-2 items-center text-white text-center rounded-xl bg-black hover:bg-gray-800 px-4 py-2">
               <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px"
                 fill="#fff">
