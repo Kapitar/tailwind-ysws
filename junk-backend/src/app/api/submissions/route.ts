@@ -3,10 +3,6 @@ import { submissionsTable } from "@/lib/airtable";
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
-  const offset = searchParams.get("offset") || 0;
-  if (typeof offset !== "number") {
-    return NextResponse.json({ error: "Invalid offset" }, { status: 400 });
-  }
 
   const status = searchParams.get("status") || "Approved";
   if (!["Approved", "Pending", "Rejected", "Needs Changes"].includes(status)) {
@@ -17,18 +13,19 @@ export async function GET(request: Request) {
 
   const query = await submissionsTable
     .select({
-      fields: ["Code URL", "First Name", "Last Name", "Screenshot", "Status"],
-      pageSize: 6,
-      offset: offset,
+      fields: ["Code URL", "First Name", "Last Name", "Screenshot", "Status", "Playable URL"],
       filterByFormula: `{Status} = "${status}"`,
     })
-    .firstPage();
+    .all();
+  console.log(query);
   const submissions = query.map((record) => {
     const screenshots = record.get("Screenshot");
     const screenshotUrl =
       screenshots && Array.isArray(screenshots) && screenshots.length > 0
         ? screenshots[0].url
         : "";
+
+    const date = record._rawJson.createdTime;
 
     return {
       id: record.id,
@@ -37,6 +34,8 @@ export async function GET(request: Request) {
       lastName: record.get("Last Name"),
       screenshot: screenshotUrl,
       status: record.get("Status"),
+      demo: record.get("Playable URL"),
+      date: date
     };
   });
 
